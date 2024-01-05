@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    hikari:
+      maximum-pool-size: 4
+    url: jdbc:postgresql://localhost:5432/infinitypo
+    username: infinitypo
+    password: infinitypo
+    driver-class-name: org.postgresql.Driver
