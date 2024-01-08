@@ -8,13 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @NoArgsConstructor
-@AllArgsConstructor
 public class HomeController {
 
     @GetMapping(value = {"/", "/home"})
-    public void home() {
+    public String home() {
 
-        return;
+        return "index.html";
 
     }
 
